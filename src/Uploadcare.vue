@@ -138,7 +138,7 @@
           Object.assign(options, { validators })
         }
 
-        this.fileGroup = uploadcare.openDialog([], options)
+        this.fileGroup = uploadcare.openPanel('#uploadcare-panel', [], options)
 
         this.fileGroup.done((filePromise) => {
           if (this.multiple) {
